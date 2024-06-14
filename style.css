@@ -10,12 +10,13 @@ html {
 body, html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Starjedi';
   height: 100%;
   min-height: 100%;
 }
 
 .keys {
+  font-family: 'Starjedi';
   display: grid;
   grid-template-columns: repeat(9, 1fr); 
   gap: 2rem; 
@@ -36,6 +37,7 @@ body, html {
   background: rgba(124, 0, 212, 0.556);
   text-shadow: 0 0 .5rem black;
 }
+
 
 .key.playing81 {
   transform: scale(1.1);
@@ -146,4 +148,11 @@ kbd {
   .sound {
     font-size: 0.8rem;
   }
+}
+
+@font-face {
+  font-family: 'Starjedi';
+  src: url('./assets/star_jedi/starjedi/Starjedi.ttf') format('ttf'); 
+  font-weight: normal; 
+  font-style: normal; 
 }
