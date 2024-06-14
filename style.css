@@ -17,8 +17,8 @@ body, html {
 
 .keys {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-  gap: 2rem; /* Increase gap between grid items */
+  grid-template-columns: repeat(9, 1fr); 
+  gap: 2rem; 
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -106,13 +106,13 @@ kbd {
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .keys {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets and larger phones */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .keys {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller tablets and large phones */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   .key {
@@ -131,7 +131,7 @@ kbd {
 
 @media (max-width: 480px) {
   .keys {
-    grid-template-columns: repeat(1, 1fr); /* 1 column on small phones */
+    grid-template-columns: repeat(1, 1fr); 
   }
 
   .key {
