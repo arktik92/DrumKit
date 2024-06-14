@@ -1,0 +1,149 @@
+html {
+  font-size: 10px;
+  background: url('./guitar.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  min-height: 100%;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+  gap: 2rem; /* Increase gap between grid items */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.key {
+  border: .25rem solid black;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  text-align: center;
+  color: white;
+  background: rgba(124, 0, 212, 0.556);
+  text-shadow: 0 0 .5rem black;
+}
+
+.key.playing81 {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.key.playing83 {
+  transform: scale(1.1);
+  border-color: #ddff00;
+  box-shadow: 0 0 1rem #ddff00;
+}
+
+.key.playing68 {
+  transform: scale(1.1);
+  border-color: #aeff00;
+  box-shadow: 0 0 1rem #aeff00;
+}
+
+.key.playing70 {
+  transform: scale(1.1);
+  border-color: #00ffe1;
+  box-shadow: 0 0 1rem #00ffe1;
+}
+
+.key.playing71 {
+  transform: scale(1.1);
+  border-color: #4ba5f4;
+  box-shadow: 0 0 1rem #4ba5f4;
+}
+
+.key.playing72 {
+  transform: scale(1.1);
+  border-color: #c460f6;
+  box-shadow: 0 0 1rem #c460f6;
+}
+
+.key.playing74 {
+  transform: scale(1.1);
+  border-color: #dc40df;
+  box-shadow: 0 0 1rem #fc40df;
+}
+
+.key.playing75 {
+  transform: scale(1.1);
+  border-color: #ee3b89;
+  box-shadow: 0 0 1rem #ee3b89;
+}
+
+.key.playing76 {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #dd78de;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .keys {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets and larger phones */
+  }
+}
+
+@media (max-width: 768px) {
+  .keys {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller tablets and large phones */
+  }
+
+  .key {
+    margin: 0.5rem;
+    padding: 0.5rem 0.25rem;
+  }
+
+  kbd {
+    font-size: 3rem;
+  }
+
+  .sound {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .keys {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small phones */
+  }
+
+  .key {
+    margin: 0.25rem;
+    padding: 0.25rem 0.125rem;
+  }
+
+  kbd {
+    font-size: 2.5rem;
+  }
+
+  .sound {
+    font-size: 0.8rem;
+  }
+}
